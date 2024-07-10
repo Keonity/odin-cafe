@@ -1,3 +1,37 @@
 body {
-    background-color: palegreen;
+    background-image: url('./coffeeBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#nav {
+    display: flex;
+    height: 100%;
+    width: 50vw;
+    flex-direction: column;
+}
+
+#navBtnContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;   
+    gap: 5%;
+}
+
+.navBtn {
+    border: none;
+    background-color: burlywood;
+    color: black;
+}
+
+#cafeTitle {
+    text-align: center;
+    color:antiquewhite;
 }
