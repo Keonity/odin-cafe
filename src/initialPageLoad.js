@@ -1,3 +1,7 @@
+import fruitTeaImg from './assets/fruitTea.jpg';
+import latteImg from './assets/latte.jpg';
+import strawbSmoothieImg from './assets/strawberrySmoothie.jpg';
+
 export default function initialPageLoad() {
     const navBar = document.querySelector("#nav");
     const cafeTitle = document.createElement("h1");
@@ -28,4 +32,39 @@ export default function initialPageLoad() {
     storyContainer.appendChild(storyText);
 
     contentContainer.appendChild(storyContainer);
+
+    const itemPreviewContainer = document.createElement("div");
+    itemPreviewContainer.setAttribute("id", "itemPreviewContainer");
+
+    const itemPreview1 = document.createElement("div");
+    itemPreview1.setAttribute("class", "previewBox");
+    const itemPreview1Img = document.createElement("img");
+    itemPreview1Img.src = fruitTeaImg;
+    itemPreview1.appendChild(itemPreview1Img);
+    const itemPreview1Text = document.createElement("h3");
+    itemPreview1Text.innerHTML = "Garden Fruit Tea";
+    itemPreview1.appendChild(itemPreview1Text);
+    itemPreviewContainer.appendChild(itemPreview1);
+
+    const itemPreview2 = document.createElement("div");
+    itemPreview2.setAttribute("class", "previewBox");
+    const itemPreview2Img = document.createElement("img");
+    itemPreview2Img.src = latteImg;
+    itemPreview2.appendChild(itemPreview2Img);
+    const itemPreview2Text = document.createElement("h3");
+    itemPreview2Text.innerHTML = "Aviary Brown Sugar Latte";
+    itemPreview2.appendChild(itemPreview2Text);
+    itemPreviewContainer.appendChild(itemPreview2);
+
+    const itemPreview3 = document.createElement("div");
+    itemPreview3.setAttribute("class", "previewBox");
+    const itemPreview3Img = document.createElement("img");
+    itemPreview3Img.src = strawbSmoothieImg;
+    itemPreview3.appendChild(itemPreview3Img);
+    const itemPreview3Text = document.createElement("h3");
+    itemPreview3Text.innerHTML = "Strawberry Rose Smoothie";
+    itemPreview3.appendChild(itemPreview3Text);
+    itemPreviewContainer.appendChild(itemPreview3);
+
+    contentContainer.appendChild(itemPreviewContainer);
 };
