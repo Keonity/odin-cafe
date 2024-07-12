@@ -59,7 +59,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    margin-top: 5vh;
+    padding: 2.5%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -120,4 +120,62 @@ body {
 
 .previewBox > h3 {
     color: white;
+}
+
+#menuContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+#menuGrid {
+    display: grid;
+    width: 75%;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25%;
+    row-gap: 5%;
+    padding: 5%;
+    background-color: #F3DEBA;
+    border-radius: 2.5%;
+    border: 1px black solid;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menuItem > img {
+    height: 300px;
+    width: 100%;
+}
+
+.menuItem > h3,
+.menuItem > p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#menuBody {
+    background-color:#A9907E;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid black;
+}
+
+#menuBody > h2 {
+    color: white;
+    padding-bottom: 2.5%;
 }
