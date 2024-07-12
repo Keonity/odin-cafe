@@ -26,8 +26,12 @@ export default function initialPageLoad() {
     storyContainer.setAttribute("id", "storyContainer");
 
     const storyText = document.createElement("p");
-    const storyTextNode = document.createTextNode("Serving Honeymoon Bay with assorted coffee, tea, and artisinal sandwiches since 2012. Verdant Cafe is owned by brothers Joey and Jay, two nationally recognized coffee connoiseurs.");
+    const storyTextNode = document.createTextNode("Serving Honeymoon Bay with assorted coffee, tea, and artisinal sandwiches since 2012.");
     storyText.appendChild(storyTextNode);
+    const storyTextBreak = document.createElement("br");
+    storyText.appendChild(storyTextBreak);
+    const storyTextNode2 = document.createTextNode("Open 12 pm - 8 pm, Monday through Friday");
+    storyText.appendChild(storyTextNode2);
     storyText.setAttribute("id", "storyText");
     storyContainer.appendChild(storyText);
 
