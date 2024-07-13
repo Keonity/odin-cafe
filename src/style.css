@@ -136,7 +136,7 @@ body {
     height: fit-content;
     grid-template-columns: 1fr 1fr;
     column-gap: 25%;
-    row-gap: 5%;
+    row-gap: 1%;
     padding: 5%;
     background-color: #F3DEBA;
     border-radius: 2.5%;

@@ -46,7 +46,7 @@ export default function initialPageLoad() {
     itemPreview1Img.src = fruitTeaImg;
     itemPreview1.appendChild(itemPreview1Img);
     const itemPreview1Text = document.createElement("h3");
-    itemPreview1Text.innerHTML = "Garden Fruit Tea";
+    itemPreview1Text.innerHTML = "Queen's Garden Tea";
     itemPreview1.appendChild(itemPreview1Text);
     itemPreviewContainer.appendChild(itemPreview1);
 
@@ -56,7 +56,7 @@ export default function initialPageLoad() {
     itemPreview2Img.src = latteImg;
     itemPreview2.appendChild(itemPreview2Img);
     const itemPreview2Text = document.createElement("h3");
-    itemPreview2Text.innerHTML = "Aviary Brown Sugar Latte";
+    itemPreview2Text.innerHTML = "Aviary Latte";
     itemPreview2.appendChild(itemPreview2Text);
     itemPreviewContainer.appendChild(itemPreview2);
 

@@ -4,9 +4,12 @@ import { menuLoad } from './menuLoad.js';
 import fruitTeaImg from './assets/fruitTea.jpg';
 import grapefruitTeaImg from './assets/grapefruitTea.jpg';
 import strawbSmoothieImg from './assets/strawberrySmoothie.jpg';
+import matchaSmoothieImg from './assets/matchaSmoothie.jpg';
 import latteImg from './assets/latte.jpg';
 import coffeeMilkImg from './assets/coffeeMilk.jpg';
-import cremeBruleeCoffeeImg from './assets/cremeBruleeCoffee.jpg';
+import lemonFoamImg from './assets/lemonFoam.jpg';
+import orangeFoamImg from './assets/orangeFoam.jpg';
+
 
 
 console.log("Test");
@@ -51,7 +54,7 @@ homeBtn.addEventListener("click", () => {
     itemPreview1Img.src = fruitTeaImg;
     itemPreview1.appendChild(itemPreview1Img);
     const itemPreview1Text = document.createElement("h3");
-    itemPreview1Text.innerHTML = "Garden Fruit Tea";
+    itemPreview1Text.innerHTML = "Queen's Garden Tea";
     itemPreview1.appendChild(itemPreview1Text);
     itemPreviewContainer.appendChild(itemPreview1);
 
@@ -61,7 +64,7 @@ homeBtn.addEventListener("click", () => {
     itemPreview2Img.src = latteImg;
     itemPreview2.appendChild(itemPreview2Img);
     const itemPreview2Text = document.createElement("h3");
-    itemPreview2Text.innerHTML = "Aviary Brown Sugar Latte";
+    itemPreview2Text.innerHTML = "Aviary Latte";
     itemPreview2.appendChild(itemPreview2Text);
     itemPreviewContainer.appendChild(itemPreview2);
 
@@ -88,3 +91,11 @@ menuBtn.addEventListener("click", () => {
     menuLoad();
 });
 const aboutBtn = document.querySelector("#aboutBtn");
+aboutBtn.addEventListener("click", () => {
+    while (contentContainer.firstChild) {
+        contentContainer.removeChild(contentContainer.lastChild);
+    }
+
+    alert("Boop!");
+    alert("Our about page is currently under construction. Check back soon!");
+})
