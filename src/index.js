@@ -96,6 +96,48 @@ aboutBtn.addEventListener("click", () => {
         contentContainer.removeChild(contentContainer.lastChild);
     }
 
-    alert("Boop!");
-    alert("Our about page is currently under construction. Check back soon!");
-})
+    const joinUsContainer = document.createElement("div");
+    joinUsContainer.setAttribute("id", "joinUsContainer");
+
+    const joinUsText = document.createElement("h3");
+    joinUsText.innerHTML = "Looking to join our team?";
+    joinUsText.setAttribute("id", "joinUsText");
+    const joinUsBody = document.createElement("p");
+    joinUsBody.innerHTML = "Join our family today and become a Sprout by emailing your application and resume to us at verdantRoastery@gmail.com! <br> We look forward to hearing from you."
+
+    joinUsContainer.appendChild(joinUsText);
+    joinUsContainer.appendChild(joinUsBody);
+
+    const partnerContainer = document.createElement("div");
+    partnerContainer.setAttribute("id", "partnerContainer");
+
+    const partnerText = document.createElement("h3");
+    partnerText.setAttribute("id", "partnerText");
+    partnerText.innerHTML = "Our partners and friends";
+
+    const partnerBody = document.createElement("div");
+    partnerBody.setAttribute("id", "partnerBody");
+
+    const partnerItem1 = document.createElement("a");
+    partnerItem1.innerHTML = "Faeriemyst Entertainment";
+    partnerItem1.setAttribute("href", "www.google.com");
+
+    const partnerItem2 = document.createElement("a");
+    partnerItem2.innerHTML = "Aviary Roasteries";
+    partnerItem2.setAttribute("href", "https://www.google.com");
+    
+    const partnerItem3 = document.createElement("a");
+    partnerItem3.innerHTML = "Honeymoon Apiary";
+    partnerItem3.setAttribute("href", "https://www.youtube.com");
+
+    partnerBody.appendChild(partnerItem1);
+    partnerBody.appendChild(partnerItem2);
+    partnerBody.appendChild(partnerItem3);
+
+    partnerContainer.appendChild(partnerText);
+    partnerContainer.appendChild(partnerBody);
+    
+    contentContainer.appendChild(joinUsContainer);
+    contentContainer.appendChild(partnerContainer);
+    
+});

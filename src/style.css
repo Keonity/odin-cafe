@@ -120,6 +120,7 @@ body {
 
 .previewBox > h3 {
     color: white;
+    text-align: center;
 }
 
 #menuContainer {
@@ -178,4 +179,43 @@ body {
 #menuBody > h2 {
     color: white;
     padding-bottom: 2.5%;
+}
+
+#joinUsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    padding: 2.5%;
+    background-color: rgba(49, 124, 59, 0.24);
+    margin-bottom: 2.5%;
+}
+
+#joinUsContainer > h3,
+#joinUsContainer > p {
+    text-align: center;
+    color: white;
+}
+
+#partnerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    padding: 2.5%;
+    background-color: rgba(49, 124, 59, 0.24);
+}
+
+#partnerBody {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2.5%;
+}
+
+#partnerBody > a {
+    text-align: center;
+    color: white;
+}
+
+#partnerContainer > h3 {
+    color: white;
+    text-align: center;
 }
